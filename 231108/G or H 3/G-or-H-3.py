@@ -1,13 +1,9 @@
 n,k = tuple(map(int,input().split()))
 
-info = dict()
+arr = [0] * 10001
 for _ in range(n):
     num, alpha = input().split()
-    info[int(num)] = alpha   
-
-arr = [0] * 10001
-for key,value in info.items():
-    arr[key] = 2 if value == "H" else 1
+    arr[int(num)] = 2 if alpha == "H" else 1
 
 ans = 0
 for i in range(1,len(arr)-k):
