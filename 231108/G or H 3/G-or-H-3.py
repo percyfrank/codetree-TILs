@@ -2,10 +2,10 @@ n,k = tuple(map(int,input().split()))
 
 info = dict()
 for _ in range(n):
-    num,alpha = input().split()
+    num, alpha = input().split()
     info[int(num)] = alpha   
 
-arr = [0] * (max(info.keys())+1)
+arr = [0] * 10001
 for key,value in info.items():
     arr[key] = 2 if value == "H" else 1
 
