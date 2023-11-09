@@ -8,9 +8,12 @@ for _ in range(n):
 
 
 ans = 0
-for i in range(k,201-k):
-    tmp = 0
-    for j in range(i-k,i+k+1):
-        tmp += position[j]
-    ans = max(ans,tmp)
+if k > 100:
+    ans = sum(position)
+else:
+    for i in range(k,101-k):
+        tmp = 0
+        for j in range(i-k,i+k+1):
+            tmp += position[j]
+        ans = max(ans,tmp)
 print(ans)
