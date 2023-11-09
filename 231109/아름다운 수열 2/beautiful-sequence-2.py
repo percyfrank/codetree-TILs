@@ -1,4 +1,6 @@
 import copy
+import sys
+input = sys.stdin.readline
 
 n,m = tuple(map(int,input().split()))
 a = list(map(int,input().split()))
