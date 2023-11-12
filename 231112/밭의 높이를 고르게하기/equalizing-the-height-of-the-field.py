@@ -5,7 +5,7 @@ ans = float('inf')
 for i in range(n-t+1):
     cost = 0
     for j in range(i,i+t):
-        if heights[j] != 3:
+        if heights[j] != h:
             cost += abs(heights[j]-h)
     ans = min(ans,cost)
 
